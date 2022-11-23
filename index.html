@@ -8,9 +8,9 @@
 </head>
 <body>
     
-    <!-- (header>h1{Les streamers Twich francais les plus ...}+hr+button{Le plus populaire}+button{le plus reg}+button{croissance la plus rapide}+hr)+main>section>table>(tr>th{rang}+th{nom}+th{lien}+th{statistiques}) -->
+    <!-- (header>h1{Les streamers Twich francais les plus ...}+hr+button{Le plus populaire}+button{le plus reg}+button{croissance la plus rapide}+hr)+main>section>table[border="1"]>(tr>th{rang}+th{nom}+th{lien}+th[colspan="2"]{statistiques}) -->
 
-    
+
     <header>
         <h1>Les streamers Twich francais les plus ...</h1>
         <hr>
@@ -19,22 +19,40 @@
     </header>
     <main>
         <section>
-            <table>
+            <table border="1">
                 <tr>
                     <th>rang</th>
                     <th>nom</th>
                     <th>lien</th>
-                    <th>statistiques</th>
+                    <th colspan="2">statistiques</th>
                 </tr>
+
+
+                   <!-- tr>(td[rowspan="2"]{1.}+td[rowspan="2"]>img[src="/img/img1.png"]+strong{Squezie})+(td[rowspan="2"]>a[href="https://www.twitch.tv/squeezie?lang=fr" target="_blank" title])+(td>strong{Nombre de followers}+br+{3,955,989}) -->
+
+                <tr>
+                    <td rowspan="2">1.</td>
+                    <td rowspan="2"><img src="/img/img1.png"  width="50px" alt=""><strong>Squezie</strong></td>
+                    <td rowspan="2"><a href="https://www.twitch.tv/squeezie?lang=fr" target="_blank" title="">https://www.twitch.tv/squeezie?lang=fr</a></td>
+                    <td><strong>Nombre de followers</strong><br>3,955,9ç</td></td>
+                    <td><strong>vu la premiere fois</strong><br>3,955,9ç</td>
+                </tr>
+
+                <!-- tr>(td>strong>{heure de visionage}+br+{4,5555})+(td>strong>{pic de tele}+br+{1234}) -->
+
+                <tr><td><strong>heure de visionnage </strong><br>4,5555</td><td><strong>pic de tele</strong><br>1234</td></tr>
+                
+               
+
+               
+
             </table>
         </section>
     </main>
 
-    table>(tr>th{rang}+th{Nom}+th{lien}+th{statistique}
 
 
-    +(tr>(td[rowspan="2"]{1.}+td[rowspan="2"]>img[src="/img/img1.png"]+strong{Squezie})+(td[rowspan="2"]>a[href="https://www.twitch.tv/squeezie?lang=fr" target="_blank" title])+(td>strong{Nombre de followers}+br+{3,955,989})
-
+ 
 
 </body>
 </html>
